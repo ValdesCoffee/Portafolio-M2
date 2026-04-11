@@ -1,0 +1,146 @@
+html {
+  background: #160f29;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+@font-face {
+  font-family: 'gothic';
+  src: url('Gotic.ttf');
+}
+
+@font-face {
+  font-family: 'Letra';
+  src: url('Monst.ttf');
+}
+
+::selection {
+  background: #c30f45;
+  color: #160f29;
+} 
+
+
+. proyecto {
+    position: absolute;
+    top: 510px;
+    left: 100px;
+    max-width: 500px;
+    z-index: 2;
+     animation: bounce 2s infinite;
+     color: #673B48;
+    font-family: 'Letra', sans-serif; 
+}
+.proyecto img {
+    position: absolute;
+    top: 50px;
+    left: 40px;
+    width: 222px;
+    height: 194px;
+    justify-content: center;
+}
+#señal {
+    position: absolute;
+    top: -300px;
+    left: 65px;
+}
+.mascotas img{
+    position: absolute;
+    bottom: -98px;
+    right: 600px;
+    max-width: 460px;
+    z-index: 2;
+    height: 194px;
+    width: 222px;
+      animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-20px);
+  }
+  60% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+h1{
+    font-size: 100px;
+    justify-self: center;
+    justify-content: center;
+    z-index: 2; 
+    color: #c30f45;
+}
+.project h2{
+    font-size: 100px;
+    position: absolute;
+    bottom: -110px;
+    right: 380px;
+    max-width: 460px;
+    z-index: 2;
+    height: 194px;
+    width: 222px;
+    color: #c30f45;
+}
+mis-proyectos {
+    font-family: 'gothic', sans-serif;
+    color: #c30f45;
+    font-size: 48px;
+    text-align: center;
+    margin-bottom: 50px;
+    text-shadow: 0 0 20px rgba(195, 15, 69, 0.5);
+}
+
+
+
+.project strong {
+  max-width: 100%;
+  width: 40%;
+    display: block;
+    color: #ff3366;
+    font-size: 18px;
+    margin-bottom: 11px;
+    justify-content: center;
+}
+
+/* Barra rosa estilo tu imagen */
+.Scooby::after {
+    content: '';
+    position: absolute;
+    bottom: 18px;
+    left: 25px;
+    right: 25px;
+    height: 6px;
+    background: linear-gradient(to right, #c30f45, #ff3366);
+    border-radius: 10px;
+}
+
+/* Thumbnail */
+.thumbnail {
+  display: flex;
+  max-width: 100%;
+  width: 40%;
+  height: auto;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 3px solid #ff3366;
+  margin-bottom: 15px;
+  place-self: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.thumbnail img {
+  width: 50%;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.thumbnail:hover img {
+    transform: scale(1.05);
+}
