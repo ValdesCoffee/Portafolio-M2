@@ -2,6 +2,7 @@ html {
   background: #160f29;
   background-size: cover;
   background-attachment: fixed;
+  display: flex;
 }
 
 @font-face {
@@ -14,201 +15,260 @@ html {
   src: url('Monst.ttf');
 }
 
+@media(max-width:1020px){
+  html{
+    background: #12013b;
+  }
+}
+
+::selection {
+  background: #c30f45;
+  color: #160f29;
+} 
+  h1 {
+  text-align: center;
+  font-family: "gothic";
+  color: #c30f45;
+  font-size: 150px;
+  margin: 15px 0;
+  }
+
+.shapes {
+  align-items: center;
+  z-index: 1;
+}
+.shapes img{
+  align-self: center;
+  width:  30%;
+  height: auto;
+  border-radius: 65px;
+  border:#c30f45 10px solid;
+}
+
+@media (max-width:920px){
+  body {
+    overflow-x: hidden;
+    margin: 0;
+  }
+
+  h1 {
+    font-size: 95px;
+    font-family: 'gothic';
+    text-align: center;
+  }
+  .shapes {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* centra horizontal */
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+  }
+
+
+  h2 {
+    font-size: 18px;
+    font-family: 'Letra';
+    color: #f76893;
+    text-align: center;
+  }
+
+  .shapes img {
+    width: 100%;
+    max-width: 320px;
+    height: auto;
+    border-radius: 65px;
+    border: #c30f45 10px solid;
+    margin: 0 auto;
+  }
+
+  .shapes .texto {
+    padding: 20px;
+    background: #12013b;
+    border: 3px solid #c30f45;
+    border-radius: 15px;
+    box-shadow: 0 0 40px rgba(195, 15, 69, 0.3);
+    max-width: 90%;
+    margin: 20px auto;
+  }
+
+  .shapes p {
+    font-size: 16px;
+    font-family: 'Letra';
+    color: #f76893;
+    text-align: center;
+  }
+
+  .lista {
+    padding: 20px;
+    background: #12013b;
+    border: 3px solid #c30f45;
+    border-radius: 15px;
+    box-shadow: 0 0 40px rgba(195, 15, 69, 0.3);
+    max-width: 90%;
+    margin: 0 auto;
+  }
+
+.lista li {
+    font-family: 'Letra', sans-serif;
+    color: #c30f45;
+    font-size: 38px;
+    text-align: center;
+    margin-bottom: 10px;
+    text-shadow: 0 0 20px rgba(195, 15, 69, 0.5);
+    list-style: none;
+  }
+  .lista li a {
+    color:#f76893;
+    font-size: 46px;
+    text-decoration: none;
+  }
+.lista li:hover{
+  color: #f76893;
+  text-shadow: 0 0 30px #ff0000,
+}
+.mascotas img {
+  width: 65px;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+    flex-direction: column;
+    align-items: center; /* centra horizontal */
+}
+.mascotas h2 {
+  width: px;
+  margin: 0 auto;
+}
+.formulario {
+font-family: 'Letra', sans-serif;
+    color: #c30f45;
+    font-size: 38px;
+    text-align: center;
+    margin-bottom: 10px;
+    text-shadow: 0 0 20px rgba(195, 15, 69, 0.5);
+}
+}
+@media(max-width:2560px){
+    html{
+    background: #160f29;
+  }
+}
+
 ::selection {
   background: #c30f45;
   color: #160f29;
 } 
 
-h1 {
-  text-align: center;
-  font-family: "gothic";
-  color: #c30f45;
-  font-size: 120px;
-  margin: 15px 0;
-}
 
-h2 {
-  text-align: center;
-  font-family: "letra";
-  font-size: 30px;
-  color: #673b48;
-  margin: 0px 0;
-  font-family: helvetica,
+.shapes {
+  align-items: center;
+  z-index: 1;
 }
-
-.shape1 {
-  position: absolute;
-  top: 250px;
-  left: 40px;
-}
-
-.shape1 img {
-  border: 13px solid #c30f45;
-  border-radius: 10px;
-  width: 70%;
-  max-width: 460px;
+.shapes img{
+  align-self: center;
+  width:  30%;
   height: auto;
-  display: block;
-  transition: all 0.4s ease;
-  animation: bounce 2s infinite;
+  border-radius: 65px;
+  border:#c30f45 10px solid;
 }
-
-
-@keyframes bounce {
-  0% {
-    transform: translateY(0);
+  body {
+    overflow-x: hidden;
+    margin: 0;
   }
 
-  40% {
-    transform: translateY(-20px);
+  h1 {
+    font-size: 125px;
+    font-family: 'gothic';
+    text-align: center;
+  }
+  .shapes {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* centra horizontal */
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
   }
 
-  60% {
-    transform: translateY(-10px);
+
+  h2 {
+    font-size: 38px;
+    font-family: 'Letra';
+    color: #f76893;
+    text-align: center;
   }
 
-  100% {
-    transform: translateY(0);
+  .shapes img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 65px;
+    border: #c30f45 10px solid;
+    margin: 0 auto;
   }
-}
 
-
-.shape1:hover img {
-  filter: brightness(1.15) saturate(1.8) hue-rotate(-15deg);
-  /* Tiñe la imagen de rojo */
-  box-shadow:
-    0 0 30px #ff0000,
-    0 0 60px #ff0000,
-    0 0 100px #c30f45,
-    0 0 160px #c30f45;
-  transform: scale(1.05);
-  /* leve aumento */
-  border-color: #ff3366;
-}
-
-.texto {
-    position: absolute;
-    top: 260px;
-    right: 200px;
-    max-width: 580px;
-    z-index: 2;
-
-    background: rgba(22, 15, 41, 0.9);
+  .shapes .texto {
+    padding: 20px;
+    background: #12013b;
     border: 3px solid #c30f45;
-    border-radius: 18px;
-    padding: 35px 45px;
-    box-shadow: 
-        0 0 30px rgba(195, 15, 69, 0.4),
-        inset 0 0 20px rgba(255, 51, 102, 0.1);
-     animation: bounce 2s infinite;
-    
-}
-.texto:hover  {
-  box-shadow:
-    0 0 30px #ff0000,
-    0 0 60px #ff0000,
-    0 0 100px #c30f45,
-    0 0 160px #c30f45;
-  transform: scale(1.20);
-  /* leve aumento */
-  border-color: #ff3366;
-}
+    border-radius: 15px;
+    box-shadow: 0 0 40px rgba(195, 15, 69, 0.3);
+    max-width: 320px;
+    margin: 20px auto;
+  }
 
-.texto p {
-    color: #ff3366;
+  .shapes p {
+    font-size: 16px;
+    font-family: 'Letra';
+    color: #f76893;
+    text-align: center;
+  }
+
+  .lista {
+    padding: 20px;
+    background: #12013b;
+    border: 3px solid #c30f45;
+    border-radius: 15px;
+    box-shadow: 0 0 40px rgba(195, 15, 69, 0.3);
+    max-width: 90%;
+    margin: 0 auto;
+  }
+
+.lista li {
     font-family: 'Letra', sans-serif;
-    font-size: 21.5px;
-    line-height: 1.65;
-    text-align: justify;
-}
-.lista{
-    position: absolute;
-    bottom: -98px;
-    left: 40px;
-    max-width: 460px;
-    z-index: 2;
-
-    background: rgba(22, 15, 41, 0.9);
-    border: 3px solid #c30f45;
-    border-radius: 18px;
-    padding: 35px 45px;
-    box-shadow: 
-        0 0 30px rgba(195, 15, 69, 0.4),
-        inset 0 0 20px rgba(255, 51, 102, 0.1);
-     animation: bounce 2s infinite;
-     color: #ff3366;
-    font-family: 'Letra', sans-serif;   
-}
-.lista:hover{
-      filter: brightness(1.15) saturate(1.8) hue-rotate(-15deg);
-  /* Tiñe la imagen de rojo */
-  box-shadow:
-    0 0 30px #ff0000,
-    0 0 60px #ff0000,
-    0 0 100px #c30f45,
-    0 0 160px #c30f45;
-  transform: scale(1.05);
-  /* leve aumento */
-  border-color: #ff3366;
-}
-.lista a {
     color: #c30f45;
-}
-.proyecto {
-    position: absolute;
-    top: 540px;
-    left: 100px;
-    max-width: 500px;
-    z-index: 2;
-     animation: bounce 2s infinite;
-     color: #673B48;
-    font-family: 'Letra', sans-serif; 
-}
-.proyecto img {
-    position: absolute;
-    top: 50px;
-    left: 40px;
-    width: 222px;
-    height: 194px;
-}
-#señal {
-    position: absolute;
-    top: -300px;
-    left: 65px;
-}
-.mascotas img{
-    position: absolute;
-    bottom: -98px;
-    right: 600px;
-    max-width: 460px;
-    z-index: 2;
-    height: 194px;
-    width: 222px;
-      animation: bounce 2s infinite;
-}
-
-@keyframes bounce {
-  0% {
-    transform: translateY(0);
+    font-size: 38px;
+    text-align: center;
+    margin-bottom: 10px;
+    text-shadow: 0 0 20px rgba(195, 15, 69, 0.5);
+    list-style: none;
   }
-  40% {
-    transform: translateY(-20px);
+  .lista li a {
+    color:#f76893;
+    font-size: 46px;
+    text-decoration: none;
   }
-  60% {
-    transform: translateY(-10px);
-  }
-
-  100% {
-    transform: translateY(0);
-  }
+.lista li:hover{
+  color: #f76893;
+  text-shadow: 0 0 30px #ff0000,
 }
-.mascotas h2{
-    font-size: 100px;
-    position: absolute;
-    bottom: -110px;
-    right: 380px;
-    max-width: 460px;
-    z-index: 2;
-    height: 194px;
-    width: 222px;
+.mascotas img {
+  width: 65px;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+    flex-direction: column;
+    align-items: center; /* centra horizontal */
+}
+.mascotas h2 {
+  width: px;
+  margin: 0 auto;
+}
+.formulario {
+font-family: 'Letra', sans-serif;
+    color: #c30f45;
+    font-size: 38px;
+    text-align: center;
+    margin-bottom: 10px;
+    text-shadow: 0 0 20px rgba(195, 15, 69, 0.5);
 }
