@@ -1,2 +1,2 @@
 ## Hola esta es mi pagina web
-https://aurivaldesportafolio.netlify.app/mascotas
+https://aurivaldesportafolio.netlify.app
